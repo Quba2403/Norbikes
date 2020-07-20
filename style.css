@@ -3,7 +3,7 @@ body {
   background-size: cover;
 }
 
-.kontener {
+.container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(8, 1fr);
@@ -20,7 +20,7 @@ body {
             text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px blue, 0 0 30px blue, 0 0 40px blue, 0 0 55px blue, 0 0 75px blue;
             border-radius: 20px;
         }
-        .przycisk{
+        .button{
           text-decoration: none;
           text-align: center;
           color: #3cbabe;
@@ -34,7 +34,7 @@ body {
           background-color: gray;
           }
 
-          .xd {
+          /* .xd {
           text-decoration: none;
           text-align: center;
           color: #3cbabe;
@@ -46,12 +46,19 @@ body {
           font-family: Arial;
           font-weight: 600;
           background-color: gray;
-          }
+          } */
           
          .eko150 {
           font-family: Arial;
           text-align: center;  
          }
+
+         .hello {
+            font-style: oblique;
+            text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px blue, 0 0 30px blue, 0 0 40px blue, 0 0 55px blue, 0 0 75px blue;
+            border-radius: 20px;
+        }
+        
          
          ::-webkit-scrollbar {
           width: 6px;
@@ -70,6 +77,20 @@ body {
           ::-webkit-scrollbar-thumb:window-inactive {
           background: #0e446c;
           } 
+
+          .php {
+            text-decoration: none;
+            text-align: center;
+            color: #3cbabe;
+            border: 2px solid #3cbabe;
+            border-radius: 10%;
+            width: 150px;
+            line-height: 40px;
+            display: inline-block;
+            font-family: Arial;
+            font-weight: 600;
+            background-color: gray;
+            }
           
          .super300 {
           text-align: center;
@@ -83,37 +104,37 @@ body {
         }
         .tv {
           padding-left: 40px;
-          
+        
         }
-        .tel {
+        .phoneimg {
           padding-left: 150px;
           
         }
 
-        #napis {
+        #text1 {
           padding-left: 170px;
             color: white;
         }
 
-        #napiss {
+        #text2 {
           color: white;
           padding-left: 40px;
         }
 
-        #napisss {
+        #text3 {
           color: white;
           padding-left: 190px;
         }
 
-        #napiz {
+        #foot {
           color: white;
           float: left;
         }
 
-        #bialy {
+        #white {
           color: cyan;
         }
-        .telewizja {
+        .tvgrid {
           text-align: center;
         }
         
@@ -123,7 +144,7 @@ body {
             height: 15vh; 
         }
 
-        .koszyk { 
+        .cart { 
             grid-area: 1 / 4 / 7 / 5;
             text-align: center;
         }
@@ -133,13 +154,13 @@ body {
             height: 77vh;
             overflow: auto;   
         }
-        .telefon { 
+        .phone { 
             grid-area: 2 / 2 / 7 / 3;
             height: 77vh;
             overflow: auto;
             text-align: left;  
         }
-        .telewizja { 
+        .tvgrid { 
             grid-area: 2 / 3 / 7 / 4;
             height: 77vh;
             overflow: auto; 
@@ -149,15 +170,15 @@ body {
             height: 30vh;
         }
 
-        .naskroty {
+        /* .naskroty {
             margin-left: 0vw;
-        }
+        } */
 
-        .adresfirmy {
+        .firm {
           margin-left: 0vw;
         }
         
-    /* wygląd głównego elementu - ol */
+    
     ol {
         list-style-type:none;
         padding:0;
@@ -168,7 +189,7 @@ body {
         text-align:center;
       }
 
-      /* wygląd wszystkich elementów - a - znajdujących się w elemencie - ol */
+      
       ol a {
         display:block;
         text-decoration:none;
@@ -176,7 +197,7 @@ body {
         padding:0 5px;
       }
 
-      /* wygląd elementów - li - wszystkich dzieci elementu - ol */
+      
       ol > li {
         float:left;
         width:150px;
@@ -184,29 +205,27 @@ body {
         height:2em;
       }
 
-      /* wygląd elementu - li - pierwszego dziecka elementu - ol */
+     
       ol > li:first-child {
         margin-left:0;
       }
 
-      /* wygląd elementów - li - wszystkich dzieci elementu - ol - po najechaniu kursorem myszki na element - li */
+      
       ol > li:hover {
         background-color:#EEE;
       }
 
-      /* wygląd elementu - a - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
+      
       ol > li:hover > a {
         color:#09C;
       }
 
-      /* wygląd elementu - ul - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
+      
       ol > li:hover > ul {
         display:block;
       }
 
-      /* ------------------------CZĘŚĆ-ROZWIJANA-MENU------------------------ */
-
-      /* wygląd głównych rozwijanych elementów - ul */
+     
       ol > li > ul {
         display:none;
         list-style-type:none;
@@ -215,26 +234,26 @@ body {
         opacity: 0.8;
       }
 
-      /* wygląd elementu - li - w części rozwijanej */
+      
       ol > li > ul > li {
         position:relative;
         background-color:#EEE;
         opacity: 0.8;
       }
 
-      /* wygląd elementu - a - w części rozwijanej */
+      
       ol > li > ul > li > a {
         border-top:1px solid #FFF;
         opacity: 0.8;
       }
 
-      /* wygląd elementu - li - w części rozwijanej, po najechaniu kursorem myszki na dany element - li */
+      
       ol > li > ul > li:hover {
         background-color:#DDD;
         opacity: 0.8;
       }
 
-      /* wygląd elementu - a - w części rozwijanej, po najechaniu kursorem myszki na element - li */
+      
       ol > li > ul > li:hover > a {
         color:#09C;
         opacity: 0.8;
